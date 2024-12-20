@@ -1,0 +1,58 @@
+body { 
+background-image: url('four.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+ 
+ 
+.skills-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    font-weight: bold;
+}
+
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    font-size: 16px;
+    margin: 0 0 8px;
+    color: #fff;
+}
+
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.progress {
+    background-color: #815137; 
+    height: 100%;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
+
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<header>
+        <div class="container">
+           <h1>NUR IRDINA SOFIEA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="family.html">Family</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+	<table>
+  <tr>
+  <th>Logo</th>
+  <th>School's Name</th>
+  <th>Achievement</th>
+  </tr>
+  
+  <tr>
+  <td>
+  <div class="table-image">
+      <img src="skb.jpg" alt="Primary School">
+    </div>
+  </td>
+  <td>
+    <p>Sk Bachok(2011-2016)</p>
+  </td>
+  
+  <td>
+ <ul> 
+ <li>Winning competitions or participating in music, art, or dance contests.</li>
+ <li>Acting in school plays or musicals and receiving recognition.</li>
+ <li>Winning medals or trophies in sports like football, netball, badminton, athletics, etc.</li>
+ <li>Being an active member of clubs like the science club, debate team, or eco-friendly club.</li>
+ </ul>
+ 
+  </td>
+  </tr>
+  
+  <tr>
+  <td>
+  <div class="table-image">
+      <img src="smkb.jpg" alt="Secondary School">
+    </div>
+  </td>
+  <td>
+    <p>SMK bachok (2017-2021)</p>
+  </td>
+  
+  <td>
+  
+  <ul>
+  <li> Being appointed as a prefect, head prefect, class monitor, or leader of clubs and societies.</li>
+  <li> Contributing to community service initiatives organized by the school or other organizations.</li>
+  <li> Being recognized as a top student in specific subjects like mathematics, science, or literature.</li>
+  <li> Participation in musical bands, orchestras, or drama productions, and receiving accolades for performances.</li>
+  <li> Recognition for excellence in art, drama, or creative writing competitions</li>
+  </ul>
+  
+  </td>
+  </tr>
+  
+  <tr>
+  <td>
+  <div class="table-image">
+      <img src="uitm.png" alt="University">
+    </div></td>
+  <td>
+    <p>Universiti Teknologi MARA, Machang branch. (2022-2025)</p>
+  </td>
+  
+  <td>
+  
+  <ul>
+  <li>Serving as president, treasurer, or other key positions in student clubs or organizations.</li>
+  <li>Organizing or leading major events, workshops, or conferences.</li>
+  <li>Consistently achieving top grades.</li>
+  <li>Completing a noteworthy final-year project, dissertation, or thesis.</li>
+  </ul>
+ 
+  </td>
+  </tr>
+</table>
+	
+	 <marquee>DON'T FORGET TO CLICK ON THE PHOTO!</marquee>
+	
+	<div class="container">
+
+  
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="tetisix.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="tetiseven.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="frengone.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="frengtwo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="tetifive.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="frengthree.jpg" style="width:100%">
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="tetisix.jpg" style="width:100%" onclick="currentSlide(1)" alt="first sem of diploma">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="tetiseven.jpg" style="width:100%" onclick="currentSlide(2)" alt="spm candidate">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="frengone.jpg" style="width:100%" onclick="currentSlide(3)" alt="aidilfitri 2024">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="frengtwo.jpg" style="width:100%" onclick="currentSlide(4)" alt="my trio">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="tetifive.jpg" style="width:100%" onclick="currentSlide(5)" alt="end of spm era">
+    <div class="column">
+      <img class="demo cursor" src="frengthree.jpg" style="width:100%" onclick="currentSlide(6)" alt="blackie">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+	
+	<div class="footer">
+            <p>&copy; 2024 Irdina Sofiea. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

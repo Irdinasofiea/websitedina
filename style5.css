@@ -1,0 +1,32 @@
+body {
+	
+	background-image: url('twentythree.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+
+    font-family: Oswald, serif;
+    margin: 0;
+    padding: 50px;
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    padding: 50px;
+	gap:10px;
+}
+
+
+.image-grid img {
+    width: 100%; 
+    height: auto;
+    border-radius: 30px; 
+    object-fit: cover;
+
+
+.image-grid img:hover {
+    opacity: 0.8;
+}
